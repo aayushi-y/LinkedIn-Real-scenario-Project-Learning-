@@ -9,7 +9,7 @@
 
 ### SQL QUERY : https://github.com/aayushi-y/LinkedIn-Real-scenario-Project-Learning-/blob/main/CTE1.sql
 
-
+********************************************************************************************************************************************************************
 
 #### Business Task 2 https://github.com/aayushi-y/LinkedIn-Real-scenario-Project-Learning-/blob/main/CTE2.1.png
 
