@@ -13,7 +13,7 @@ from monthly_cte current
 monthly_cte previous
 where datediff('month', previous.month, current.month) = 1 AND 
 (current.revenue - previous.revenue) > 0
-/* WITH LAG WINDOW FUNCTION SAME QUERY CAN BE WRITTEN AS 
+/* WITH LAG WINDOW FUNCTION SAME QUERY CAN BE WRITTEN AS */
 
 With temp1 as (select date_trunc('month', orderdate) as order_date, 
 sum(revenue) as revenue from subscriptions 
@@ -35,4 +35,3 @@ AND
 datediff("month", previous_month, current_month) =1
 
 
-*/
