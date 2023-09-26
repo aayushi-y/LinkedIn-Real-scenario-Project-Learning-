@@ -1,3 +1,21 @@
+/*﻿
+
+Business problem: Comparing MoM Revenue
+It's time for end-of-year reporting, and your manager wants you to put together a slide deck summarizing the top revenue highlights of the year and present it to the whole 
+company on the all-hands call. Among other metrics and insights, your manager suggests that you highlight months where revenue was up month-over- month (MoM). In other words,
+she wants you to highlight the months where revenue was up from the previous month. You know this can be done with window functions using lead or lag (see the window 
+functions chapter of this course), but you decide to exercise your self join skills to accomplish the task. 
+﻿
+
+Using the monthly_revenue CTE joined to itself, pull a report that includes the following fields:
+• current_month: the current month
+• previous_month: the previous month from the current month
+• current_revenue: the monthly revenue of the current month
+• previous_revenue: the monthly revenue of the previous month
+• Only pull rows where the monthly revenue for the current month is greater than the revenue for the previous month.
+• Filter the data so that the date difference (in months) between the current month and previous month is 1.
+*/
+
 With monthly_CTE AS (
 select date_trunc('month', orderdate) as month,
 sum(revenue) as revenue from subscriptions 
