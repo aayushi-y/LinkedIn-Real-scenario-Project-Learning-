@@ -1,5 +1,4 @@
 /* ﻿
-
 Business problem:
 The leadership team at your company is making goals for 2023 and wants to understand how much revenue each of the product subscriptions, basic and expert, are generating each
 month. More specifically, they want to understand the distribution of monthly revenue across the past year, 2022.
